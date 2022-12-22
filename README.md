@@ -4,8 +4,10 @@ Kelompok 13 :
 3. Lihardo Marson Purba (5025211238)
 
 
-METODE INTEGRASI TRAPEZOIDAL VS METODE INTEGRASI ROMBERG/n\n
+METODE INTEGRASI TRAPEZOIDAL VS METODE INTEGRASI ROMBERG
+
 PENGANTAR 
+
 Trapezoidal
 Sama seperti Namanya, metode ini menggunakan rumus trapezium dimana dalam implementasinya kita menjumlahkan luas trapezium yang berasal dari pembagian bidang yang dibentuk suatu garis fungsi f(x) dan garis y =0. Dimana diilustrasikan sebagai berikut : 
 
