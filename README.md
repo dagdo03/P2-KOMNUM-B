@@ -35,19 +35,21 @@ Jika kita menerapkan Richardson Exptrapolation pada metode integrasi Trapezoidal
  
 Dengan menggunakan ilustrasi yang sama, kita bisa melihat bahwa metode ini mengevaluasi setiap nilai yang terbentuk oleh setiap ruas trapezium yang terlihat pada gambar diatas. Dengan mengevaluasi setiap nilai dari pembagian ruas trapezium maka akan didapat hasil yang sangat akurat dimana kita menggunakan Richardson Extrapolation untuk mengevaluasinya.
 Untuk persamaannya akan menjadi :
-R_1,1=h/2 [f(a)+f(b)]
-R_2,1=h/4 [f(a)+f(a+h/2  )+f(b)]
-R_3,1=h/8 [f(a)+f(a+h/4  )+f(a+h/2  )+f(b)]
-
-R_2,2=R_1,1+1/3 [R_2,1-R_1,1 ]
-R_3,2=R_3,1+1/3 [R_3,1-R_2,1 ]
+![image](https://user-images.githubusercontent.com/95538168/209051099-2f4e84b6-f848-4abf-bc15-1e41441f9397.png)
 
 
-R_3,3=R_3,2+1/15 [R_3,2-R_2,2 ]
+![image](https://user-images.githubusercontent.com/95538168/209051158-d3e6ca5c-ead5-48ec-bcc6-48b881e9fbbe.png)
+
+
+
+![image](https://user-images.githubusercontent.com/95538168/209051198-2c6bad2f-7f18-41af-8a36-ef39c25ff69d.png)
+
 
 
 SECARA UMUM :
-R_(k,j)=R_(k,j-1)+1/(4^(j-1)-1) [R_(k,j-1)-R_(k-1,j-1) ]
+
+![image](https://user-images.githubusercontent.com/95538168/209051224-c7357402-27c8-4427-9aff-946af17b9a10.png)
+
 
 NOTE : 
 Semakin besar nilai j maka semakin besar pula tingkat akurasi dari nilai yang diperoleh dari perhitungan yang dilakukan.
