@@ -1,7 +1,13 @@
-import numpy as np
+import math
 from scipy import integrate 
-f = lambda x: x * np.sin(x) #integral of x * sin(x)
-a = 0
-b = np.pi/2
 
-romberg = integrate.romberg(f, a, b, show = True)
+function = input("Masukkan Fungsi : ")
+
+def f(x):
+    f = eval(function)
+    return f
+
+a = float(input("Masukkan batas bawah : "))
+b = float(input("Masukkan batas atas : "))
+
+romberg = integrate.romberg(f, a, b, show = True) 
